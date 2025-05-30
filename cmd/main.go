@@ -15,7 +15,7 @@ func main() {
 
 	router.Use(log.LoggingMiddleware)
 
-	// Like NestJS module registration
+	// Module registration
 	user.RegisterUserModule(router)
 
 	// Start the HTTP server with graceful shutdown
