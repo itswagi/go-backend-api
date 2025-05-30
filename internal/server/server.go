@@ -16,7 +16,7 @@ import (
 func StartServer(router http.Handler, log *logger.Logger) {
 	// Configure CORS settings
 	corsOptions := cors.New(cors.Options{
-		AllowedOrigins:   []string{"http://localhost:3000", "https://www.dealdhoondo.com"}, // Set your allowed origins
+		AllowedOrigins:   []string{"*"}, // Set your allowed origins
 		AllowedMethods:   []string{"GET", "POST", "PUT", "DELETE"},                         // Specify allowed methods
 		AllowedHeaders:   []string{"Authorization", "Content-Type"},                        // Specify allowed headers
 		ExposedHeaders:   []string{"Authorization"},                                        // Specify exposed headers
